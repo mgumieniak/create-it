@@ -1,6 +1,6 @@
 export interface Cv {
   id: string;
-  personalDetails: Map<string, any>;
+  personalDetails: Map<string, string>;
   experiences: Experience[];
   skillToRating: Map<string, number>;
 }

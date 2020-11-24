@@ -1,0 +1,19 @@
+@import "../../styles";
+@import "../form";
+
+.form {
+  display: block;
+  margin: $small-dist;
+}
+
+.form-account {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-account > .form-field  + .form-field  {
+  margin-left: $small-dist;
+  margin-top: 0;
+}

@@ -1,0 +1,39 @@
+<form class="form" novalidate [formGroup]="forms" (ngSubmit)="onSubmit()">
+  <form-field class="form-field">
+    <form-label>Full name:</form-label>
+    <input formInput
+           type="text"
+           placeholder="Your full name"
+           formControlName="name">
+    <form-error>
+      Full name error
+    </form-error>
+  </form-field>
+  <form-field class="form-field">
+    <form-label>Type:</form-label>
+    <form-select formControlName="type">
+      <option>1</option>
+      <option>2</option>
+    </form-select>
+    <form-error>
+      Type error
+    </form-error>
+  </form-field>
+  <div formGroupName="account" class="form-account">
+    <div class="form-field">
+      <form-label>Email address:</form-label>
+      <input formInput
+             type="email"
+             placeholder="Your email address"
+             formControlName="email">
+    </div>
+    <div class="form-field">
+      <form-label>Confirm address:</form-label>
+      <input formInput
+             type="email"
+             placeholder="Confirm your email address"
+             formControlName="confirm">
+    </div>
+  </div>
+  <button type="submit">Sign up</button>
+</form>

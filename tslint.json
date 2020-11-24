@@ -1,5 +1,5 @@
 {
-  "extends": ["tslint:recommended", "tslint-config-prettier" ],
+  "extends": "tslint:recommended",
   "rulesDirectory": [
     "codelyzer"
   ],
@@ -68,11 +68,6 @@
       true,
       "single"
     ],
-    "semicolon": {
-      "options": [
-        "always"
-      ]
-    },
     "space-before-function-paren": {
       "options": {
         "anonymous": "never",
@@ -107,6 +102,7 @@
     "variable-name": {
       "options": [
         "ban-keywords",
+        "allow-leading-underscore",
         "check-format",
         "allow-pascal-case"
       ]
@@ -121,9 +117,8 @@
         "check-typecast"
       ]
     },
-    "component-class-suffix": true,
+    "component-class-suffix": false,
     "contextual-lifecycle": true,
-    "directive-class-suffix": true,
     "no-conflicting-lifecycle": true,
     "no-host-metadata-property": true,
     "no-input-rename": true,
@@ -138,14 +133,11 @@
     "use-pipe-transform-interface": true,
     "directive-selector": [
       true,
-      "attribute",
-      "app",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
       "kebab-case"
     ]
   }
