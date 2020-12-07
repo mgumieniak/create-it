@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {RestClientService} from '../../../model/rest-client.service';
 import {multiScan} from 'rxjs-multi-scan';
 import {Observable, Subject} from 'rxjs';

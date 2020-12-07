@@ -1,12 +1,22 @@
 <form class="form" novalidate [formGroup]="form" (ngSubmit)="updateGivenCV()">
   <form-field class="form-field">
-    <form-label>Full name:</form-label>
+    <form-label>First name:</form-label>
     <input formInput
            type="text"
-           placeholder="Your full name"
+           placeholder="First name"
            [formControlName]=FIRSTNAME>
     <form-error>
-      Full name error
+      Provide first name
+    </form-error>
+  </form-field>
+  <form-field class="form-field">
+    <form-label>Last name:</form-label>
+    <input formInput
+           type="text"
+           placeholder="Last name"
+           [formControlName]=LASTNAME>
+    <form-error>
+      Provide last name
     </form-error>
   </form-field>
 </form>

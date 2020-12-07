@@ -14,7 +14,7 @@ import {ExperienceComponent} from './editor/experience/component/experience.comp
 import {RatingComponent} from './editor/rating/component/rating.component';
 import {RatingContainerComponent} from './editor/rating/container/rating-container.component';
 import {ExperienceContainerComponent} from './editor/experience/container/experience-container.component';
-import {MyFormModule} from '../forms/form-module/my-form.module';
+import {MyFormModule} from '../../forms/form-module/my-form.module';
 import {ReactiveFormsModule} from '@angular/forms';
 
 

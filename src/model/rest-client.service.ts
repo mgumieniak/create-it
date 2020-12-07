@@ -33,10 +33,10 @@ export class RestClientService {
 
   update(cv: Cv): Observable<Cv> {
     return this.http
-      .put<Cv>(this.baseUrl + '/cvs/1', cv)
+      .patch<Cv>(this.baseUrl + '/cvs/1', cv)
       .pipe(
         tap((it) => {
-          console.log('PUT data:');
+          console.log('PATCH data:');
           console.log(it);
         }),
         catchError(this.handleError<Cv>('Update CV'))
